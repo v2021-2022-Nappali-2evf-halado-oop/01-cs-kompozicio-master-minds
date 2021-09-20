@@ -14,9 +14,19 @@ namespace SpectatorProject.Model
         /// <summary>
         /// Adattagok létrehozva
         /// </summary>
-        
-         float balance;
-         string cardNumber;
 
+        float balance;
+        string cardmumber;
+
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
+        /// <param name="balance"></param>
+        /// <param name="cardmumber"></param>
+        public BonusCard(float balance, string cardmumber)
+        {
+            this.balance = balance;
+            this.cardmumber = cardmumber;
+        }
     }
 }
