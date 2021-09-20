@@ -34,5 +34,18 @@ namespace SpectatorProject.Model
         /// </summary>
         public string FirstName { get => firstName; set => firstName = value; }
         public string LastName { get => lastName; set => lastName = value; }
+
+        /// <summary>
+        /// Teljes név
+        /// </summary>
+        public string FullName
+        {
+            get
+            {
+                return lastName + " " + firstName;
+            }
+        }
+
+
     }
 }
