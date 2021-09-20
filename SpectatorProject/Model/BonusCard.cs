@@ -28,5 +28,8 @@ namespace SpectatorProject.Model
             this.Balance = balance;
             this.Cardmumber = cardmumber;
         }
+
+        public float Balance { get => balance; set => balance = value; }
+        public string Cardmumber { get => cardmumber; set => cardmumber = value; }
     }
 }
