@@ -11,5 +11,12 @@ namespace SpectatorProject.Model
     /// </summary>
     class Name
     {
+        /// <summary>
+        /// adattagok
+        /// </summary>
+        private string firstName;
+        private string lastName;
+
+
     }
 }
