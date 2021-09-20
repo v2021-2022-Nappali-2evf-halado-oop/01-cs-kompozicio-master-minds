@@ -46,6 +46,16 @@ namespace SpectatorProject.Model
             }
         }
 
+        /// <summary>
+        /// ToString metódus étrejötte
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+
+            return "A néző teljes neve: " + FullName;
+        }
+
 
     }
 }
