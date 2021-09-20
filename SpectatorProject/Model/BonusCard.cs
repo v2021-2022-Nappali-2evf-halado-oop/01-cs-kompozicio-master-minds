@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace SpectatorProject.Model
 {
+    enum Status
+    {
+        Active,
+        Inactive,
+        Expired
+    }
+
     /// <summary>
     /// Bonusz CLass
     /// </summary>
