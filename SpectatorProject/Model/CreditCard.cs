@@ -27,6 +27,10 @@ namespace SpectatorProject.Model
             this.Expiredate = expiredate;
             this.CardNumber = cardNumber;
         }
-
+        /// <summary>
+        /// Getter setter létrejött.
+        /// </summary>
+        public DateTime Expiredate { get => expiredate; set => expiredate = value; }
+        public string CardNumber { get => cardNumber; set => cardNumber = value; }
     }
 }
