@@ -25,8 +25,8 @@ namespace SpectatorProject.Model
         /// <param name="cardmumber"></param>
         public BonusCard(float balance, string cardmumber)
         {
-            this.balance = balance;
-            this.cardmumber = cardmumber;
+            this.Balance = balance;
+            this.Cardmumber = cardmumber;
         }
     }
 }
