@@ -29,5 +29,10 @@ namespace SpectatorProject.Model
             this.LastName = lastName;
         }
 
+        /// <summary>
+        /// Módosítható ís írható tulajdonság
+        /// </summary>
+        public string FirstName { get => firstName; set => firstName = value; }
+        public string LastName { get => lastName; set => lastName = value; }
     }
 }
