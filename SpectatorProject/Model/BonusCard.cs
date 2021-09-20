@@ -11,25 +11,29 @@ namespace SpectatorProject.Model
     /// </summary>
     class BonusCard
     {
-        /// <summary>
-        /// Adattagok létrehozva
-        /// </summary>
-
-        float balance;
-        string cardmumber;
+        private float balance;
+        private Status status;
+        private string cardNumber;
 
         /// <summary>
         /// Konstruktor
         /// </summary>
+        /// <param name="cardNumber"></param>
+        /// <param name="status"></param>
         /// <param name="balance"></param>
-        /// <param name="cardmumber"></param>
-        public BonusCard(float balance, string cardmumber)
+        public BonusCard(string cardNumber, Status status, float balance)
         {
             this.Balance = balance;
-            this.Cardmumber = cardmumber;
+            this.Status = status;
+            this.CardNumber = cardNumber;
         }
 
+
+        /// <summary>
+        /// Getter-Setter
+        /// </summary>
         public float Balance { get => balance; set => balance = value; }
-        public string Cardmumber { get => cardmumber; set => cardmumber = value; }
+        public string CardNumber { get => cardNumber; set => cardNumber = value; }
+        internal Status Status { get => status; set => status = value; }
     }
 }
