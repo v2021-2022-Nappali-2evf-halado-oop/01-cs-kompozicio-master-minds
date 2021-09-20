@@ -18,5 +18,16 @@ namespace SpectatorProject.Model
         private string lastName;
 
 
+        /// <summary>
+        /// Minden adattagot tartalmazó konstruktor
+        /// </summary>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
+        public Name(string firstName, string lastName)
+        {
+            this.FirstName = firstName;
+            this.LastName = lastName;
+        }
+
     }
 }
