@@ -5,11 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SpectatorProject.Model
-{   /// <summary>
+{   
+    /// <summary>
     /// Hitelkártya osztály
     /// </summary>
     class CreditCard
     {
-        
+        /// <summary>
+        /// Adattagok felvétele
+        /// </summary>
+        private DateTime expiredate;
+        private string cardNumber;
     }
 }
