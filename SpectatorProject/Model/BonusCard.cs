@@ -7,9 +7,16 @@ using System.Threading.Tasks;
 namespace SpectatorProject.Model
 {
     /// <summary>
-    /// Bonusz osztály
+    /// Bonusz CLass
     /// </summary>
     class BonusCard
     {
+        /// <summary>
+        /// Adattagok létrehozva
+        /// </summary>
+        
+         float balance;
+         string cardNumber;
+
     }
 }
