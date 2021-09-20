@@ -50,7 +50,26 @@ namespace SpectatorProject.Model
                 }
             }
         }
+        /// <summary>
+        /// A ToString metódus létrejött
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            string result = "Hitelkártya adatai: " + cardNumber;
+            result += "\nLejárati dátum: " + expiredate + "\n";
+            if (Expired)
+            {
+                result = "A kártya lejárt.";
+            }
+            else
+            {
+                result = "A kártya aktív.";
+            }
 
+            return result;
+
+        }
     }
 }
-}
+
