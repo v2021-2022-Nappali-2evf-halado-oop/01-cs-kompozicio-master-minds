@@ -56,5 +56,24 @@ namespace SpectatorProject.Model
                 }
             }
         }
-     }
+        /// <summary>
+        /// ToString
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            string result = "Bónuszkártya adatok : \nKártyaszám: ";
+            result += cardNumber + "\nfelhasználható összeg: " + balance + "\n";
+            if (Usable)
+            {
+                result += "Aktiv";
+
+            }
+            else
+            {
+                result += "Inaktív";
+            }
+            return result;
+        }
+    }
 }
