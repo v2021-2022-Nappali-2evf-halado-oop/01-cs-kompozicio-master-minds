@@ -42,5 +42,19 @@ namespace SpectatorProject.Model
         public float Balance { get => balance; set => balance = value; }
         public string CardNumber { get => cardNumber; set => cardNumber = value; }
         internal Status Status { get => status; set => status = value; }
-    }
+        public bool Usable
+        {
+            get
+            {
+                if (balance > 0 && status == Status.Active)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+     }
 }
