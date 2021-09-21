@@ -42,5 +42,25 @@ namespace SpectatorProject.Model
         public float Balance { get => balance; set => balance = value; }
         public string CardNumber { get => cardNumber; set => cardNumber = value; }
         internal Status Status { get => status; set => status = value; }
+
+        /// <summary>
+        /// ToString
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            string result = "Bónuszkártya adatok : \nKártyaszám: ";
+            result += cardNumber + "\nfelhasználható összeg: " + balance + "\n";
+            if (Usable)
+            {
+                result += "Aktiv";
+                
+            }
+            else
+            {
+                result += "Inaktív";
+            }
+            return result;
+        }
     }
 }
